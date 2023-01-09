@@ -2,7 +2,7 @@
 
 
 ##Steg 1 - Velkommen
-Programmer lysene med kommandoer fra menyen til venstre.
+Lag fine lys med kommandoer fra menyen til venstre.
 
 
 
@@ -11,6 +11,19 @@ bitbot.setLedColor(0xFF0000)
 
 
 ```
+
+```blocks
+input.onGesture(Gesture.TiltLeft, function () {
+    bitbot.ledRotate()
+})
+bitbot.setLedColor(0x0000FF)
+bitbot.setPixelColor(0, 0x00FF00)
+basic.forever(function () {
+	
+})
+
+```
+
 
 ```ghost
 input.onButtonPressed(Button.A, function () {
