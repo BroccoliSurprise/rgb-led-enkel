@@ -13,14 +13,16 @@ bitbot.setLedColor(0xFF0000)
 ```
 
 ```blocks
+bitbot.setLedColor(0x0000FF)
+
+input.onButtonPressed(Button.A, function () {
+    bitbot.setPixelColor(0, 0x00FF00)
+})
+
 input.onGesture(Gesture.TiltLeft, function () {
     bitbot.ledRotate()
 })
-bitbot.setLedColor(0x0000FF)
-bitbot.setPixelColor(0, 0x00FF00)
-basic.forever(function () {
-	
-})
+
 
 ```
 
