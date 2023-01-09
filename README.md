@@ -2,7 +2,9 @@
 
 
 ##Steg 1 - Velkommen
-Lag fine lys med kommandoer fra menyen til venstre.
+Lag fine lys med kommandoer fra menyen til venstre, og trykk på "Last ned" i venstre hjørne når du vil teste programmet ditt.
+
+Hvis du sitter fast, eller vil ha noen ideer, kan du trykke på lyspæren til høyre for å se et eksempel.
 
 
 
