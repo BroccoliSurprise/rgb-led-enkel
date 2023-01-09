@@ -1,31 +1,33 @@
+# LED-lys
 
-> Åpne denne siden på [https://broccolisurprise.github.io/rgb-led-enkel/](https://broccolisurprise.github.io/rgb-led-enkel/)
 
-## Bruk som utvidelse
+##Steg 1 - Velkommen
+Programmer lysene med kommandoer fra menyen til venstre.
 
-Dette kodeområdet kan bli lagt til som en **utvidelse** i MakeCode.
 
-* åpne [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klikk på **Nytt prosjekt**
-* klikk på **Utvidelser** i menyen under tannhjulet
-* søk etter **https://github.com/broccolisurprise/rgb-led-enkel** og importér
 
-## Rediger dette prosjektet ![Bygg statusmerke](https://github.com/broccolisurprise/rgb-led-enkel/workflows/MakeCode/badge.svg)
+```template
+bitbot.setLedColor(0xFF0000)
 
-For å redigere dette kodeområdet i MakeCode.
 
-* åpne [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* klikk på **Importer** og så på **Importér URL**
-* lim inn **https://github.com/broccolisurprise/rgb-led-enkel** og klikk på importér
+```
 
-## Forhåndsvisning av blokker
+```ghost
+input.onButtonPressed(Button.A, function () {
+    for (let index = 0; index < 4; index++) {
+        bitbot.ledShift()
+    }
+})
 
-Dette bildet viser blokk-koden fra den siste oppdateringen i hovedgrenen.
-Dette bildet kan ta noen minutter å oppdatere.
+input.onGesture(Gesture.TiltLeft, function () {
+	
+})
 
-![En opptegnet visning av blokkene](https://github.com/broccolisurprise/rgb-led-enkel/raw/master/.github/makecode/blocks.png)
-
-#### Metadata (brukes for søk, visualisering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+bitbot.ledClear()
+bitbot.setPixelColor(0, bitbot.convertRGB(0, 0, 0))
+bitbot.ledRainbow()
+bitbot.ledRotate()
+basic.pause(100)
+basic.forever(function () {
+	
+})

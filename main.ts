@@ -4,14 +4,12 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onGesture(Gesture.TiltLeft, function () {
-	
+    bitbot.ledRotate()
+    basic.pause(100)
+    bitbot.ledClear()
+    bitbot.setPixelColor(0, bitbot.convertRGB(0, 0, 0))
 })
 bitbot.setLedColor(0xFF0000)
-bitbot.ledClear()
-bitbot.setPixelColor(0, bitbot.convertRGB(0, 0, 0))
-bitbot.ledRainbow()
-bitbot.ledRotate()
-basic.pause(100)
 basic.forever(function () {
-	
+    bitbot.ledRainbow()
 })
