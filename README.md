@@ -37,16 +37,28 @@ input.onButtonPressed(Button.A, function () {
 })
 
 
+input.onSound(DetectedSound.Loud, function () {
+	
+})
 
 input.onGesture(Gesture.TiltLeft, function () {
 	
 })
 
+basic.showString("Hello!")
 bitbot.ledClear()
 bitbot.setPixelColor(randint(0, 10), bitbot.convertRGB(0, 0, 0))
 bitbot.ledRainbow()
 bitbot.ledRotate()
 basic.pause(100)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    `)
+
 basic.forever(function () {
 	
 })
